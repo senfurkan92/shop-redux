@@ -1,6 +1,6 @@
 export default function Layout({appheader, appfooter, children}) {
     return (
-        <div className="min-h-[100vh] grid grid-rows-[max-content_auto_max-content] bg-base-100" data-theme="cupcake">
+        <div className="min-h-[100vh] grid grid-rows-[max-content_auto_max-content] bg-base-100" data-theme="business">
             <header className="p-4 bg-base-300 border-b border-warning">
                 {appheader}
             </header>

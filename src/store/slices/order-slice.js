@@ -7,7 +7,6 @@ const submitOrder = createAsyncThunk('order/submitOrder', async (payload, {dispa
     payload._date = new Date()
     const resp = await axiosInstance.post('/orders.json', payload)
     if (resp.status == 200) {
-        console.log(resp.data)
         dispatch(removeAllFromCart())
         dispatch(setAsyncNotification({
             title: 'new order',
